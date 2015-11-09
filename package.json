@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --reporter min $(find lib -name '*.test.js')",
     "build": "./node_modules/tinydoc/cli/tinydoc compile dist/tinydoc-plugin-js.js ui/index.js --optimize",
-    "prepublish": "npm test && npm run build"
+    "lint": "./node_modules/eslint/bin/eslint.js .",
+    "prepublish": "npm run lint && npm test && npm run build"
   },
   "repository": {
     "type": "git",
