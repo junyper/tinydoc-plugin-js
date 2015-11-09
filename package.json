@@ -1,0 +1,48 @@
+{
+  "name": "tinydoc-plugin-js",
+  "version": "1.0.0",
+  "description": "tinydoc plugin for JavaScript sources.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --reporter min $(find lib -name '*.test.js')",
+    "build": "./node_modules/tinydoc/cli/tinydoc compile dist/tinydoc-plugin-js.js ui/index.js --optimize",
+    "prepublish": "npm test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tinydoc/tinydoc-plugin-js.git"
+  },
+  "keywords": [
+    "tinydoc",
+    "plugin",
+    "js",
+    "docs",
+    "documentation",
+    "generator",
+    "javascript"
+  ],
+  "author": "Ahmad Amireh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tinydoc/tinydoc-plugin-js/issues"
+  },
+  "homepage": "https://github.com/tinydoc/tinydoc-plugin-js#readme",
+
+  "dependencies": {
+    "dox": "0.7.0",
+    "lodash": "3.6.0",
+    "weakmap": "0.0.6",
+    "weakset": "^0.2.1"
+  },
+
+  "devDependencies": {
+    "chai": "2.1.0",
+    "eslint": "^1.4.3",
+    "eslint-plugin-react": "^3.4.1",
+    "mocha": "^2.3.3",
+    "multiline-slash": "^1.0.0",
+    "recast": "^0.10.32",
+    "sinon": "^1.17.1",
+    "tinydoc": ">= 3.0"
+  }
+}

@@ -1,0 +1,4 @@
+__tests__
+/doc/compiled
+
+# we do not want to ignore /dist in the npm packages!
