@@ -1,6 +1,6 @@
 {
   "name": "tinydoc-plugin-js",
-  "version": "1.0.0",
+  "version": "4.0.0",
   "description": "tinydoc plugin for JavaScript sources.",
   "main": "lib/index.js",
   "scripts": {
@@ -33,7 +33,8 @@
     "dox": "0.7.0",
     "lodash": "3.6.0",
     "weakmap": "0.0.6",
-    "weakset": "^0.2.1"
+    "weakset": "^0.2.1",
+    "tinydoc": "4.x"
   },
 
   "devDependencies": {
@@ -43,7 +44,6 @@
     "mocha": "^2.3.3",
     "multiline-slash": "^1.0.0",
     "recast": "^0.10.32",
-    "sinon": "^1.17.1",
-    "tinydoc": ">= 3.0"
+    "sinon": "^1.17.1"
   }
 }
